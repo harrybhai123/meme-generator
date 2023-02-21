@@ -1,0 +1,71 @@
+.Meme {
+  text-align: center;
+  display: grid;
+  max-width:  100%;
+
+  .form {
+  
+
+    input {
+      margin: 1em;
+      margin-top: 2.2em;
+      width: 25%;
+      padding: 0.8em;
+      font-size: 1.2rem;
+      outline: none;
+      border: 0;
+      border-radius: 5px;
+    }
+    button {
+      margin: 1em auto;
+      padding: 0.8em 2em;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      width: 53%;
+      outline: none;
+      border: 0;
+      background: linear-gradient(90.41deg, #711f8d 1.14%, #a818da 100%);
+      border-radius: 5px;
+      color: rgb(86, 241, 241);
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+        color: rgb(219, 61, 61);
+      }
+      
+    }
+  }
+
+  img{
+    max-width: 100%;
+    // width: 53%;
+    height: 60vh;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+ .Meme{
+    .form {
+        #first-meme {
+          margin-top: 2em;
+        }
+        input {
+          width: 80%;
+          margin-top: 1em;
+          padding: 0.6em;
+        }
+    
+        button {
+          
+          padding: 0.6em 1em;
+        }
+      }
+      img{
+        padding: 1em;
+        height: 100%;
+      }
+ }
+}
